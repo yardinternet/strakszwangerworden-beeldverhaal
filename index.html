@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beeldverhaal | Straks zwanger worden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="scripts/page-flip.browser.js"></script>
+    <script src="scripts/index.js" type="module"></script>
+  </head>
+  <body>
+    <main>
+      <div class="story">
+        <div class="story-language-container">
+          <p>Kies je taal:</p>
+          <button
+            data-language="nl"
+            data-active="true"
+            class="js-btn-language btn-language"
+          >
+            Nederlands
+          </button>
+          <button
+            data-language="en"
+            data-active="false"
+            class="js-btn-language btn-language"
+          >
+            Engels
+          </button>
+          <button
+            data-language="ar"
+            data-active="false"
+            class="js-btn-language btn-language"
+          >
+            Arabisch
+          </button>
+          <button
+            data-language="tu"
+            data-active="false"
+            class="js-btn-language btn-language"
+          >
+            Turks
+          </button>
+          <button
+            data-language="pap"
+            data-active="false"
+            class="js-btn-language btn-language"
+          >
+            Papiamento
+          </button>
+          <button
+            data-language="port"
+            data-active="false"
+            class="js-btn-language btn-language"
+          >
+            Portugees
+          </button>
+          <button
+            data-language="sra"
+            data-active="false"
+            class="js-btn-language btn-language"
+          >
+            Surinaams
+          </button>
+        </div>
+
+        <div id="js-story" class="story-pages-container">
+          <div id="js-story-page-0-left" class="js-story-page story-page">
+            <div class="page-content">
+              <img
+                src="./assets/img/pages/page-0.jpg"
+                alt=""
+                class="page-image"
+              />
+              <h2 class="page-title"></h2>
+              <h3 class="page-subtitle"></h3>
+              <p class="page-text"></p>
+            </div>
+          </div>
+          <div
+            id="js-story-page-0-right"
+            data-translation-id="1"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <img
+                src="./assets/img/pages/page-1.jpg"
+                alt=""
+                class="page-image"
+              />
+              <h2 class="page-title"></h2>
+              <h3 class="page-subtitle"></h3>
+              <p class="page-text"></p>
+            </div>
+          </div>
+
+          <div
+            id="js-story-page-2-left"
+            data-translation-id="2"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <img
+                src="./assets/img/pages/page-2.jpg"
+                alt=""
+                class="page-image"
+              />
+              <h2 class="page-title"></h2>
+            </div>
+          </div>
+          <div
+            id="js-story-page-2-right"
+            data-translation-id="2"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <audio class="js-story-audio">
+                <source src="./assets/audio/page-2.mp3" />
+              </audio>
+              <h3 class="page-subtitle"></h3>
+              <p class="page-text"></p>
+            </div>
+          </div>
+
+          <div
+            id="js-story-page-3-left"
+            data-translation-id="3"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <img
+                src="./assets/img/pages/page-3.jpg"
+                alt=""
+                class="page-image"
+              />
+              <h2 class="page-title"></h2>
+            </div>
+          </div>
+          <div
+            id="js-story-page-3-right"
+            data-translation-id="3"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <audio class="js-story-audio">
+                <source src="./assets/audio/page-3.mp3" />
+              </audio>
+              <h3 class="page-subtitle"></h3>
+              <p class="page-text"></p>
+            </div>
+          </div>
+
+          <div
+            id="js-story-page-4-left"
+            data-translation-id="4"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <img
+                src="./assets/img/pages/page-4.jpg"
+                alt=""
+                class="page-image"
+              />
+              <h2 class="page-title"></h2>
+            </div>
+          </div>
+          <div
+            id="js-story-page-4-right"
+            data-translation-id="4"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <audio class="js-story-audio">
+                <source src="./assets/audio/page-4.mp3" />
+              </audio>
+              <h3 class="page-subtitle"></h3>
+              <p class="page-text"></p>
+            </div>
+          </div>
+
+          <div
+            id="js-story-page-5-left"
+            data-translation-id="5"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <img
+                src="./assets/img/pages/page-5.jpg"
+                alt=""
+                class="page-image"
+              />
+              <h2 class="page-title"></h2>
+            </div>
+          </div>
+          <div
+            id="js-story-page-5-right"
+            data-translation-id="5"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <audio class="js-story-audio">
+                <source src="./assets/audio/page-5.mp3" />
+              </audio>
+              <h3 class="page-subtitle"></h3>
+              <p class="page-text"></p>
+            </div>
+          </div>
+
+          <div
+            id="js-story-page-6-left"
+            data-translation-id="6"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <img
+                src="./assets/img/pages/page-6.jpg"
+                alt=""
+                class="page-image"
+              />
+              <h2 class="page-title"></h2>
+            </div>
+          </div>
+          <div
+            id="js-story-page-6-right"
+            data-translation-id="6"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <audio class="js-story-audio">
+                <source src="./assets/audio/page-6.mp3" />
+              </audio>
+              <h3 class="page-subtitle"></h3>
+              <p class="page-text"></p>
+            </div>
+          </div>
+
+          <div
+            id="js-story-page-7-left"
+            data-translation-id="7"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <img
+                src="./assets/img/pages/page-7.jpg"
+                alt=""
+                class="page-image"
+              />
+              <h2 class="page-title"></h2>
+            </div>
+          </div>
+          <div
+            id="js-story-page-7-right"
+            data-translation-id="7"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <audio class="js-story-audio">
+                <source src="./assets/audio/page-7.mp3" />
+              </audio>
+              <h3 class="page-subtitle"></h3>
+              <p class="page-text"></p>
+            </div>
+          </div>
+
+          <div
+            id="js-story-page-8-left"
+            data-translation-id="8"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <img
+                src="./assets/img/pages/page-8.jpg"
+                alt=""
+                class="page-image"
+              />
+              <h2 class="page-title"></h2>
+            </div>
+          </div>
+          <div
+            id="js-story-page-8-right"
+            data-translation-id="8"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <audio class="js-story-audio">
+                <source src="./assets/audio/page-8.mp3" />
+              </audio>
+              <h3 class="page-subtitle"></h3>
+              <p class="page-text"></p>
+            </div>
+          </div>
+
+          <div
+            id="js-story-page-9-left"
+            data-translation-id="9"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <img
+                src="./assets/img/pages/page-9.jpg"
+                alt=""
+                class="page-image"
+              />
+              <h2 class="page-title"></h2>
+            </div>
+          </div>
+          <div
+            id="js-story-page-9-right"
+            data-translation-id="9"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <audio class="js-story-audio">
+                <source src="./assets/audio/page-9.mp3" />
+              </audio>
+              <h3 class="page-subtitle"></h3>
+              <p class="page-text"></p>
+            </div>
+          </div>
+
+          <div
+            id="js-story-page-10-left"
+            data-translation-id="10"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <img
+                src="./assets/img/pages/page-10.jpg"
+                alt=""
+                class="page-image"
+              />
+              <h2 class="page-title"></h2>
+            </div>
+          </div>
+          <div
+            id="js-story-page-10-right"
+            data-translation-id="10"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <audio class="js-story-audio">
+                <source src="./assets/audio/page-10.mp3" />
+              </audio>
+              <h3 class="page-subtitle"></h3>
+              <p class="page-text"></p>
+            </div>
+          </div>
+
+          <div
+            id="js-story-page-11-left"
+            data-translation-id="11"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <img
+                src="./assets/img/pages/page-11.jpg"
+                alt=""
+                class="page-image"
+              />
+              <h2 class="page-title"></h2>
+            </div>
+          </div>
+          <div
+            id="js-story-page-11-right"
+            data-translation-id="11"
+            class="js-story-page story-page"
+          >
+            <div class="page-content">
+              <audio class="js-story-audio">
+                <source src="./assets/audio/page-11.mp3" />
+              </audio>
+              <h3 class="page-subtitle"></h3>
+              <p class="page-text"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-controls-container">
+          <button
+            id="js-btn-prev"
+            class="btn-prev"
+            aria-label="Vorige pagina"
+            disabled
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+              />
+            </svg>
+          </button>
+          <div class="story-controls-audio-container">
+            <button
+              id="js-btn-audio-restart"
+              class="btn-audio-restart"
+              disabled
+            >
+              Stem opnieuw afspelen
+            </button>
+            <button
+              id="js-btn-audio-control"
+              class="btn-audio-control"
+              aria-label="Start audio"
+              disabled
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <path
+                  fill="#ffffff"
+                  d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+                />
+              </svg>
+            </button>
+          </div>
+          <button
+            id="js-btn-next"
+            class="btn-next"
+            aria-label="Volgende pagina"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path
+                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
